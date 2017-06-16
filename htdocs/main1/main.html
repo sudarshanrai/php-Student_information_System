@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>placement at msrit</title>
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="css/modal.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <script src="scripts/modernizr-2.6.1.min.js"></script>
+    
+    <script src="ajax.js"></script>
+    <script src="lean-slider.js"></script>
+    <link rel="stylesheet" href="lean-slider.css" type="text/css" />
+    <link rel="stylesheet" href="sample-styles.css" type="text/css" />
+	<style>
+body
+{
+    background-color:#F0FFC2
+
+
+
+
+;
+height:                             700px;
+}
+		#slideshow {
+			top:0px; 
+		    margin: 10px auto; 
+		    position: relative; 
+		    width: 500px; 
+		    height: 470px; 
+		    padding: 10px; 
+			border:3px solid #444;
+		    box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+		}
+		
+		#slideshow > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+	</style>
+<script src="ajax.js"></script>
+	<script>
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+			
+		});
+	</script>
+    </head>
+    <body>
+        <header>
+            <h2>MS RAMAIAH INSTITUTE OF TECHNOLOGY</h2>
+		<h3>(An  Autonomous Institute Affiliated to vtu)</h3>
+		<h4>Accredited By National Board of Accredation</h4>
+		<h5>guest</h5>
+		<img border="0" src="msrit.jpg" width="70" height="70">
+        </header>
+
+        <!-- panel with buttons -->
+        <div class="main">
+           <div class="panel">
+                <a href="#logout" id="logout">Log out</a>
+                <a href="#aboutus" id="aboutus">About us</a>
+		<a href="#notification" id="notification" ONMOUSEOVER = "alert('no new notifications found')">Notifications</a>
+                <a href="#message" id="message" onclick="message()">Message</a>
+            </div>
+			<div id="slideshow">
+    <div class="slider-wrapper">
+        <div id="slider">
+            <div class="slide1">
+                <img src="images/1.jpg" alt="" />
+            </div>
+            <div class="slide2">
+                <img src="images/2.jpg" alt="" />
+            </div>
+            <div class="slide3">
+                <img src="images/3.jpg" alt="" />
+            </div>
+            <div class="slide4">
+                <img src="images/4.jpg" alt="" />
+            </div>
+        </div>
+        <div id="slider-direction-nav"></div>
+        <div id="slider-control-nav"></div>
+    </div>
+	</div>
+</div>
+
+       
+<script>
+function message()
+{
+
+var person=prompt("Please enter your message here","");
+
+if (person!=null)
+  {
+  alert("thank you!! your message has been sent to admin.");
+  }
+}
+</script>
+<script type="text/javascript">
+	(function(){ var bsa = document.createElement('script'); bsa.type = 'text/javascript'; bsa.async = true; bsa.src = '//s3.buysellads.com/ac/bsa.js'; (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa); })();
+</script>
+    </body>
+</html>

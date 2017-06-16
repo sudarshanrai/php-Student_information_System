@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Div in table</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
+        <style type="text/css" media="all">
+
+        th      {border-bottom: 2px solid #ccc; }
+
+        th,td       {padding: 0.5em 1em; 
+                margin: 0;
+                border-collapse: collapse;
+                }
+
+        tr td:first-child
+                {border-right: 2px solid #ccc; } 
+
+        td > div    {width: 249px;
+                height: 299px;
+                background-color:Gray;
+                overflow-y: auto;
+                max-width:230px;
+                max-height:100px;
+                }
+        </style>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript">
+
+    </script>
+
+</head>
+
+<body>
+
+<div>
+
+    <table>
+
+        <thead>
+            <tr><th>This is column one</th><th>This is column two</th><th>This is column three</th>
+        </thead>
+
+
+
+        <tbody>
+            <tr><td>This is row one</td><td>data point 2.1</td><td>data point 3.1</td>
+            <tr><td>This is row two</td><td>data point 2.2</td><td>data point 3.2</td>
+            <tr><td>This is row three</td><td>data point 2.3</td><td>data point 3.3</td>
+            <tr><td>This is row four</td><td><div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies mattis dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum a accumsan purus. Vivamus semper tempus nisi et convallis. Aliquam pretium rutrum lacus sed auctor. Phasellus viverra elit vel neque lacinia ut dictum mauris aliquet. Etiam elementum iaculis lectus, laoreet tempor ligula aliquet non. Mauris ornare adipiscing feugiat. Vivamus condimentum luctus tortor venenatis fermentum. Maecenas eu risus nec leo vehicula mattis. In nisi nibh, fermentum vitae tincidunt non, mattis eu metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc vel est purus. Ut accumsan, elit non lacinia porta, nibh magna pretium ligula, sed iaculis metus tortor aliquam urna. Duis commodo tincidunt aliquam. Maecenas in augue ut ligula sodales elementum quis vitae risus. Vivamus mollis blandit magna, eu fringilla velit auctor sed.</p></div></td><td>data point 3.4</td>
+            <tr><td>This is row five</td><td>data point 2.5</td><td>data point 3.5</td>
+            <tr><td>This is row six</td><td>data point 2.6</td><td>data point 3.6</td>
+            <tr><td>This is row seven</td><td>data point 2.7</td><td>data point 3.7</td>
+        </body>
+
+
+
+    </table>
+
+</div>
+
+</body>
+
+</html>

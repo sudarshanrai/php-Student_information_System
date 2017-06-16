@@ -1,0 +1,40 @@
+*{
+    margin:0;
+   
+}
+body {
+    background-color:#eee;
+    font:14px/1.3 Arial,sans-serif;
+margin: 0;
+overflow:hidden;
+}
+header {
+    background-color:#339966;
+    box-shadow: 0 +2px 2px #777878;
+    color:#fff;
+    display:block;
+    height:70px;
+    position:relative;
+    width:100%;
+    z-index:100;
+}
+header h2{
+    font-size:30px;
+    font-weight:normal;
+    left:70%;
+    margin-left:-400px;
+    padding:22px 0;
+    position:absolute;
+    width:540px;
+}
+h7 {
+font-size:20px;
+left:70%;
+margin-left:-400px;
+}
+
+header .stuts span {
+    font-size:22px;
+    font-weight:bold;
+    margin-left:5px;
+}

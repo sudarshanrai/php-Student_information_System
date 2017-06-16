@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+        <link href="form/css/layout.css" rel="stylesheet" type="text/css" />
+       <!-- <link href="form/css/modal.css" rel="stylesheet" type="text/css" />--> 
+<!--	 <link href="form.css" rel="stylesheet" type="text/css" />	-->
+<title> ADD COMPANY</title>
+ 
+<style>
+header img
+{
+left:0px;
+top:10px;
+}
+</style>
+ </head>
+<body>
+  <header>
+  <h1>M.S. Ramaiah Institute of Technology</h1>
+<img  src="msrit.jpg" width="70" height="60"/>
+</header>
+<form class="contact_form" action="insertin2dbcompany.php" autocomplete="on" method="post" onsubmit="return if(confirm('Are you sure you want to submit?')){ alert("thank you!")}" >
+<br>
+<br>
+<br>
+<fieldset>
+		<legend  style="width="18px"><b>COMPANY DETAILS</b></legend>
+<table>
+<tr>
+<!--<td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td>	-->	
+<td>Company Name:</td>	
+	<td>	<input type="text" name="cname"   required></td>
+	<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr><td><br></td></tr>
+<tr>	
+<td>Company Type: </td>
+<td><input type="text" name="type" autocomplete="on"  required><br></td>
+</tr>
+<tr><td><br></td></tr>
+<tr>
+<td>Branch:</td>
+	<td><input list="branchs" name="branch" autocomplete="off" required>
+  <datalist  id="branchs" >
+    <option value="Mtech">
+    <option value="MBA">
+    <option value="CSE">
+    <option value="ECE">
+	<option value="TCE">
+    <option value="ISE">
+	<option value="BT">
+    <option value="MECH">
+  </datalist>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+ &nbsp;&nbsp;&nbsp;
+</tr>
+<tr><td><br></td></tr>
+<tr>	
+<td>min qualificaion: </td>
+<td><input type="text" name="min_qualification"  required><br></td>
+</tr>
+<tr><td><br></td></tr>
+<tr>	
+<td>Cgpa: </td>
+<td><input type="text" name="cgpa"  required><br></td>
+</tr>
+<tr>
+<tr><td><br></td></tr>
+<td>Date Of placement:</td>
+<td><input type="date" name="dop" required><br></td>
+<td>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<tr><td><br></td></tr>
+<td>package:</td>
+	<td><input type="text" name="package"  required><br></td>
+</tr>
+<tr><td><br></td></tr>
+</table>
+</fieldset>
+<br><br>
+&nbsp;&nbsp;<input type="submit" value="Add Company" />&nbsp;&nbsp;&nbsp;
+<input type="reset" value="clear form" />
+</form>
+</body>
+</html>

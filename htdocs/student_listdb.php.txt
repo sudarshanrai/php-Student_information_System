@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="utf-8" />
+        <link href="form/css/layout.css" rel="stylesheet" type="text/css" />
+       <!-- <link href="form/css/modal.css" rel="stylesheet" type="text/css" />--> 
+<!--	 <link href="form.css" rel="stylesheet" type="text/css" />	-->
+<title> ONLINE APPLICATION FORM</title>
+<style>
+header img
+{
+left:0px;
+top:10px;
+}
+</style>
+ </head>
+<body>
+  <header>
+  <h1>M.S. Ramaiah Institute of Technology</h1>
+<img  src="msrit.jpg" width="70" height="60"/>
+</header>
+ <h6 align="center">ONLINE PLACEMENT REGISTRATION FORM</h6>
+<?php
+mysql_connect('localhost','root','root') or die(mysql_error());
+mysql_select_db('otaps')  or die(mysql_error());
+$query=mysql_query("select * from student where cgpa="$_post[cgpa] and teperc="$_post[teperc] and branch=$_post[branch] ;")  or die(mysql_error());
+<table border="1px" >';
+while($res=mysql_fetch_array($query)) 
+{
+  echo'<tr>
+  <th>student name:</th>
+  <th>usn</th>
+  <th>email</th>
+  <th>cgpa</th>
+  </tr><tr><td>'.
+  $res['name'].
+  '</td><td>'.
+  $res['usn'].
+  '</td><td>'.
+  $res['email'].
+  '</td><td>'.
+  $res['cgpa'].
+  '</td></tr>';
+ 
+}
+?>
+</body>
+</html>

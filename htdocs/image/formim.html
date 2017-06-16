@@ -1,0 +1,13 @@
+<html>
+<body>
+<?php
+  $link = mysql_connect("localhost", "root", "");
+  mysql_select_db("placement");
+  $sql = "SELECT image FROM student WHERE fname="vijay"";
+  $result = mysql_query("$sql");
+  mysql_close($link);
+
+?>
+<img src="" width="175" height="200" />
+</body>
+</html>
